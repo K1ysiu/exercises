@@ -8,34 +8,24 @@ public class StrMain1dodatkowe {
 //        String myString = scanner.nextLine();
         String myString = "AAEEEEEDHH";
         char myArray[] = myString.toCharArray();
+        int n = myArray.length;
+        boolean visited[] = new boolean[n];
+        Arrays.fill(visited, false);
         Arrays.sort(myArray);
         System.out.println(Arrays.toString(myArray));
-        int len = myArray.length;
-        int count = 0;
-        char[] distArray = new char[len];
-        int index = 0;
-        for (int i = 0; i < len; i++) {
-            int flag = 0;
-            for (int j = 0; j < i; j++) {
-                if (myArray[i] == myArray[j]) {
-                    flag = 1;
-                    break;
-                }
-            }
-            if (flag == 0) {
-                distArray[index] = myArray[i];
-                index++;
-            }
 
-        }
-        for (char x: distArray) {
-            for (char y : myArray) {
-                if (x == y) {
+
+        for (int i = 0; i<n; i++){
+            if (visited[i]==true)
+                continue;
+            int count = 1;
+            for(int j = i + 1; j < n ; j++){
+                if(myArray[i] == myArray[j]){
+                    visited[j] = true;
                     count++;
-
                 }
-                System.out.println(x + count);
             }
+            System.out.print(myArray[i] + "" + count);
         }
 
 
