@@ -8,14 +8,16 @@ public class ClothingItem {
 
     private String type;
     private ClothingSize size;
-    private double price;
+    public double price;
     private int quantity;
 
+    public ClothingItem(ClothingSize size, double price, int quantity) {  //
+        this.size = size;
+        this.price = price;
+        this.quantity = quantity;
+    }
 
-//    public ClothingItem() {
-//    }
-
-    public ClothingItem(String type, ClothingSize size, double price, int quantity) {
+    public ClothingItem(String type, ClothingSize size, double price, int quantity) { //ClothingItem item = new ClothingItem(ClothingItem.SHIRT, ClothingSize.L ,19.99, 3);
         this.type = type;
         this.size = size;
         this.price = price;
