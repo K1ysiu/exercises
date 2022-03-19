@@ -1,19 +1,39 @@
+import jdk.nashorn.internal.ir.WhileNode;
+
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class FileMain1 {
     public static void main(String[] args) {
-        StringBuilder stringBuilder = new StringBuilder();
-        File file = new File("readFile.txt");
-        try{
-            Scanner scan = new Scanner(file);
-            while (scan.hasNextLine()){
-                stringBuilder.append(scan.nextLine() + "\n") ;
-            }
+        File file = new File("Main.txt");
 
-        }catch (FileNotFoundException e){
-            System.out.println(e.getMessage());
+        try {
+            Scanner scanner = new Scanner(file);
+            PrintWriter printWriter = new PrintWriter("Main.txt");
+
+            Scanner scanner1 = new Scanner(System.in);
+
+            String input = null;
+
+            while (!"Quit".equals(input)) {
+
+                System.out.println("Type text");
+                input = scanner1.nextLine();
+                if (!"Quit".equals(input)){
+                    printWriter.println(input);
+                }
+            }
+            printWriter.close();
+
+
+
+        } catch (FileNotFoundException e) {
+            System.out.println("File not exist");
         }
+
     }
 }
+
+

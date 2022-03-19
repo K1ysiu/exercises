@@ -7,6 +7,7 @@ public class Main4 {
         System.out.println(createName(name, surname, nickname));
 
     }
+
     public static String createName(String name, String surname, String nickname) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(name);
