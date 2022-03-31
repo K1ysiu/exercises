@@ -5,7 +5,7 @@ public class PnMain3 {
     }
 
     static int countTokent(String str) {
-        char myArray[] = str.toCharArray();
+        char[] myArray = str.toCharArray();
         int count = 0;
         for (char item : myArray) {
             if (!Character.isWhitespace(item)) {

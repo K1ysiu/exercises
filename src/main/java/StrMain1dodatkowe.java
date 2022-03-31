@@ -7,9 +7,9 @@ public class StrMain1dodatkowe {
 //        System.out.println("podaj ciąg znaków");
 //        String myString = scanner.nextLine();
         String myString = "AAEEEEEDHH";
-        char myArray[] = myString.toCharArray();
+        char[] myArray = myString.toCharArray();
         int n = myArray.length;
-        boolean visited[] = new boolean[n];
+        boolean[] visited = new boolean[n];
         Arrays.fill(visited, false);
         Arrays.sort(myArray);
         System.out.println(Arrays.toString(myArray));

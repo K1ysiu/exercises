@@ -19,7 +19,5 @@ public class FileMain3 {
         } catch (FileNotFoundException e) {
             e.getMessage();
         }
-
-
     }
 }

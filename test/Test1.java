@@ -3,8 +3,8 @@ import org.junit.Test;
 
 public class Test1 {
 
-    private String string = "AAAABBBCHHHHHHHAA";
-    private String resultString = "A6B3C1H7";
+    private final String string = "AAAABBBCHHHHHHHAA";
+    private final String resultString = "A6B3C1H7";
 
     @Test
     public void demoTest(){

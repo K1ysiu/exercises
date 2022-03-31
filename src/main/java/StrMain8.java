@@ -1,6 +1,6 @@
 public class StrMain8 {
     public static void main(String[] args) {
-        String myString[] = {"aaa", "bbb"};
+        String[] myString = {"aaa", "bbb"};
 
         System.out.println(stringFromArray(myString));
     }

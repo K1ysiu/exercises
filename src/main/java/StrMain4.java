@@ -9,7 +9,7 @@ public class StrMain4 {
 
     static String toogleChar(String str) {
         char[] myArray = str.toCharArray();
-        char myOutputArray[] = new char[str.length()];
+        char[] myOutputArray = new char[str.length()];
         for (int i = 0; i < str.length(); i++) {
             if (Character.isUpperCase(myArray[i])) {
                 myOutputArray[i] = Character.toLowerCase(myArray[i]);

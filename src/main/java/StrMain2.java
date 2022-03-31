@@ -11,7 +11,7 @@ public class StrMain2 {
         System.out.println(checkPali(myPalindrom));
     }
     static boolean checkPali(String myPalindrom) {
-        char myArray[] = myPalindrom.toCharArray();
+        char[] myArray = myPalindrom.toCharArray();
 
         for (int i = 0; i < myArray.length; i++) {
             if (myArray[i] != myArray[myArray.length - i - 1]) {

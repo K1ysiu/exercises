@@ -10,7 +10,7 @@ public class DanMain4 {
         int cols = scanner.nextInt();
         int myNumber = 0;
         System.out.println(rows + ", " + cols);
-        int myArray[][] = new int[rows][cols];
+        int[][] myArray = new int[rows][cols];
         int mySum = 0;
 
         for (int i = 0; i < myArray.length; i++) {

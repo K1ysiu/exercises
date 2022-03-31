@@ -9,11 +9,7 @@ public class Main6 {
         System.out.println(checkMaturity(age));
     }
     static boolean checkMaturity(int age){
-        if (age >= 18){
-            return true;
-        }else{
-            return false;
-        }
+        return age >= 18;
     }
 }
 

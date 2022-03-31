@@ -9,7 +9,7 @@ public class StrMain1 {
         String string = scanner.nextLine();
 
         int myLength = string.length();
-        String myArray[] = new String[myLength];
+        String[] myArray = new String[myLength];
         char[] chArray = string.toCharArray();
         System.out.println(Arrays.toString(chArray));
         char myChar = chArray[myLength - 1];
